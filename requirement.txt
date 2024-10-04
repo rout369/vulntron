@@ -1,0 +1,12 @@
+socket 
+time 
+scapy
+colorama 
+tqdm
+subprocess
+requests
+phonenumbers
+geocoder
+OpenCageGeocode
+folium
+BeautifulSoup
