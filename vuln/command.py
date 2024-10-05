@@ -2,6 +2,7 @@ import os
 import platform
 import subprocess
 
+
 def is_wsl():
     """Check if the current environment is WSL."""
     return 'microsoft' in platform.uname().release.lower()
