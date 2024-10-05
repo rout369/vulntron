@@ -1,4 +1,3 @@
-socket 
 time 
 scapy
 colorama 
