@@ -14,15 +14,17 @@ def open_new_command_line():
         # Open new cmd in the current directory
         subprocess.Popen(f'start cmd /K "cd {current_dir}"', shell=True)
     elif is_wsl():
-        # Open a new WSL terminal in the current directory
-        subprocess.Popen(f'cmd.exe /C start wsl --cd {current_dir}', shell=True)
+        # Open Windows Terminal or another terminal emulator in the current directory
+        subprocess.Popen(f'start wt.exe -d "{current_dir}"', shell=True)
     elif current_os == "Linux":
-        # Open gnome-terminal or xterm in the current directory (if available)
+        # Open a new terminal (you can choose any terminal you prefer)
         try:
             subprocess.Popen(['gnome-terminal', '--working-directory', current_dir])
         except FileNotFoundError:
-            # Fallback to xterm if gnome-terminal is not available
-            subprocess.Popen(['xterm', '-e', f'cd {current_dir} && bash'])
+            try:
+                subprocess.Popen(['xterm', '-e', f'cd {current_dir} && bash'])
+            except FileNotFoundError:
+                print("Error: No available terminal emulator found. Please install gnome-terminal or xterm.")
     elif current_os == "Darwin":  # macOS
         # Open Terminal in the current directory
         subprocess.Popen(['open', '-a', 'Terminal', current_dir])
