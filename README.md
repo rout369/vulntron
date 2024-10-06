@@ -51,9 +51,10 @@ python3 xssxplore.py --help
 <img src="images/Screenshot (395).png">
 <img src="images/Screenshot (396).png">
 <img src="images/Screenshot (397).png">
-<img src="images/Screenshot (398).png">
 <img src="images/Screenshot (399).png">
 
 
 ## Note
-* now it doesn't support DOM
+* It doesn't support DOM
+* All the tools are in developing phase
+
