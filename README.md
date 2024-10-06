@@ -1,6 +1,6 @@
 <p align="center">
  <img src="images/joker htb.jpg" height="200"><br/>
-A powerful XSS scanner made in python 3.7<br/>
+Vulntron using python 3.7<br/>
 
 
 ## Installing
@@ -46,7 +46,13 @@ python3 xssxplore.py --help
 
 
 ## Screenshot
-
+<img src="images/Screenshot (393).png">
+<img src="images/Screenshot (394).png">
+<img src="images/Screenshot (395).png">
+<img src="images/Screenshot (396).png">
+<img src="images/Screenshot (397).png">
+<img src="images/Screenshot (398).png">
+<img src="images/Screenshot (399).png">
 
 
 ## Note
