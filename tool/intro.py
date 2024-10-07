@@ -75,11 +75,3 @@ ____   ____    .__    __________________
     print(bcolors.GREEN + header_art)
     print(bcolors.RED + ascii_art)
     print(bcolors.GREEN + green_art + bcolors.RESET)
-
-    print(bcolors.RED + '['+bcolors.YELLOW+'::' + bcolors.RED + ']' + bcolors.GREEN + '  Select What You Want To Do  ' + bcolors.RED + '['+bcolors.YELLOW+'::' + bcolors.RED + ']')
-    print(" ")
-    # print(" ")
-    # print(" ")
-    print(bcolors.RED + '['+bcolors.YELLOW+'01' + bcolors.RED + ']' + bcolors.GREEN + '  Network Scanner ' + bcolors.RESET )
-    print(bcolors.RED + '['+bcolors.YELLOW+'02' + bcolors.RED + ']' + bcolors.GREEN + '  Vulnerability Scanners' + bcolors.RESET )
-    # print(bcolors.RED + '['+bcolors.YELLOW+'03' + bcolors.RED + ']' + bcolors.GREEN + '  E_mail_Bombing' + bcolors.RESET )
