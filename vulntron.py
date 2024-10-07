@@ -133,11 +133,10 @@ def Vulnerablity_scanner():
         print(" ")
         print(bcolors.RED + '['+bcolors.YELLOW+'01' + bcolors.RED + ']' + bcolors.GREEN + '  XSS_Scanner ' + bcolors.RESET)
         print(bcolors.RED + '['+bcolors.YELLOW+'02' + bcolors.RED + ']' + bcolors.GREEN + '  SQL_Injection' + bcolors.RESET)
-        print(bcolors.RED + '['+bcolors.YELLOW+'03' + bcolors.RED + ']' + bcolors.GREEN + '  CVE_Scanner ' + bcolors.RESET)
         choice = input(Fore.YELLOW + "Enter your choice or 'q' to quit: ")
         print(" ")
         if choice == '1':
-            print("Use the command python xsscon.py to start the scanner")
+            print("Use the command python xssxplore.py to start the scanner")
             print(Fore.YELLOW + Style.BRIGHT + "Initializing the Xss Scanner...", end="")
             for _ in range(5):
         # Simulate loading with colored dots
@@ -147,11 +146,15 @@ def Vulnerablity_scanner():
             print(Fore.CYAN + "\nInitialization complete!\n")
             open_new_command_line()  # Opens a new command line window
         elif choice == '2':
-            print("SQL Injection module in progress...")
-
-        elif choice == '3':
-            print("CVE Scanner module in progress...")
-
+            print("Use the command python inject.py --help to start the scanner")
+            print(Fore.YELLOW + Style.BRIGHT + "Initializing the Xss Scanner...", end="")
+            for _ in range(5):
+        # Simulate loading with colored dots
+                print(Fore.GREEN + ".", end="")
+                sys.stdout.flush()
+                time.sleep(1)
+            print(Fore.CYAN + "\nInitialization complete!\n")
+            open_new_command_line()  # Opens a new command line window
         elif choice.lower() == 'q':
             print("Stopping the tool....")
             break
@@ -168,18 +171,25 @@ def Vulnerablity_scanner():
 
 def main_menu():
     while True:
+        print(" ")
+        print(bcolors.RED + '['+bcolors.YELLOW+'::' + bcolors.RED + ']' + bcolors.GREEN + '  Select What You Want To Do  ' + bcolors.RED + '['+bcolors.YELLOW+'::' + bcolors.RED + ']')
+        print(" ")
+        # print(" ")
+        # print(" ")
+        print(bcolors.RED + '['+bcolors.YELLOW+'01' + bcolors.RED + ']' + bcolors.GREEN + '  Network Scanner ' + bcolors.RESET )
+        print(bcolors.RED + '['+bcolors.YELLOW+'02' + bcolors.RED + ']' + bcolors.GREEN + '  Vulnerability Scanners' + bcolors.RESET )
         choice = input(Fore.YELLOW + "Enter your choice or 'q' to quit: ")
+        print(" ")
         if choice == '1':
             network_scanner()
         elif choice == '2':
             Vulnerablity_scanner()
-        elif choice == '3':
-            print("working on it.....")
         elif choice.lower() == 'q':
             print("Exiting...")
             break
         else:
             print(Fore.RED + "Invalid choice, please try again.")
+
 
 
 show_loading_bar(3)  # 3 seconds of loading time
