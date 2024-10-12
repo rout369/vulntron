@@ -51,7 +51,7 @@ python3 xssxplore.py --help
 
 ## Note
 * It doesn't support DOM
-* Also downlode Nocap , perl(if you using window) , nikto(clone it using git or downlode ZIP file (i recommend that))
+* Also downlode Npcap , perl(if you using window) , nikto(clone it using git or downlode ZIP file (i recommend that))
 * All the tools are in developing phase
   
 
