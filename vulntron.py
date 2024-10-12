@@ -23,7 +23,53 @@ def show_loading_bar(duration, spinner_style='dots', spinner_color=Fore.MAGENTA,
 
 conf.L3socket = conf.L3socket()
 
+N = '\033[0m'
+W = '\033[1;37m' 
+B = '\033[1;34m' 
+M = '\033[1;35m' 
+R = '\033[1;31m' 
+G = '\033[1;32m' 
+Y = '\033[1;33m' 
+C = '\033[1;36m'
+underline = "\033[4m"
+line="—————————————————" 
+
+
+logo=G+""" 
+
+┌──(Nikto📡Log)
+┌──(Nikto 🕵️‍♂️SCANNER)-[㉿]
+└─$-o>  ℹ️ INFO: Connecting to the Server!
+
+ ______          __                               __              __           __  __      __      __             
+/\__  _\        /\ \__                           /\ \__          /\ \         /\ \/\ \  __/\ \    /\ \__          
+\/_/\ \/     ___\ \ ,_\    __     __   _ __   __ \ \ ,_\    __   \_\ \        \ \ ` \\ \/\_\ \ \/'\\ \ ,  \   ___   
+   \ \ \   /' _ `\ \ \/  /'__`\ /'_ `\/\`'__/'__` \\ \ \/  /'__`\ /'_` \        \ \ , ` \/\ \ \ , < \ \ \/  / __`\ 
+    \_\ \__/\ \/\ \ \ \_/\  __//\ \L\ \ \ \/\ \L\. \\ \ \_/\  __//\ \L\ \        \ \ \`\ \ \ \ \ \\`\\ \ \_/\ \L\ \ %s
+    /\_____\ \_\ \_\ \__\ \____\ \____ \ \_\ \__/.\_\ \__\ \____\ \___,_\        \ \_\ \_\ \_\ \_\ \_\ \__\ \____/ %s
+    \/_____/\/_/\/_/\/__/\/____/\/___L\ \/_/\/__/\/_/\/__/\/____/\/__,_ /  _______\/_/\/_/\/_/\/_/\/_/\/__/\/___/ 
+                                  /\____/                                 /\______\                               
+                                  \_/__/                                  \/______/        
+
+┌──(Nikto📡Log)
+┌──(Nikto 🕵️‍♂️SCANNER)-[㉿]
+└─$-o>  ℹ️ INFO: Connection established successfully!  
+
+<<<<<<< STARTING >>>>>>>
+"""%(R+"{v1.0 Devloping}"+G,underline+C+"https://github.com/rout369/vulntron"+N+G)
+	
+##=======
+"""%(R+"{v1.0 Devloping}"+G,underline+C+"https://github.com/rout369/vulntron"+N+G)
+	
+>>>>>>> branch 'master' of https://github.com/rout369/vulntron
+"""
+def display_logo():
+    """Display the logo for the XssXplore tool."""
+    print(logo)
+
 def run_nikto(target_url):
+    display_logo()
+    print("")
     nikto_path = r'C:\Users\acer\nikto-master\program'  # Update this path to your Nikto installation
     os.chdir(nikto_path)
     
@@ -149,6 +195,8 @@ def main():
             run_nikto(args.target)
         else:
             print(Fore.RED + "Error: Please specify a target URL for Nikto using --target." + Fore.RESET)
+
+
 
 
 
