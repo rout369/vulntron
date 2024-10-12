@@ -25,7 +25,7 @@ python3 vulntron.py
 Basic usage:
 
 ```bash
-python3 vulntron.py
+python3 vulntron.py --help-info
 ```
 For the Xss_Scanner:
 ```bash
