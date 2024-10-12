@@ -46,15 +46,12 @@ python3 xssxplore.py --help
 
 
 ## Screenshot
-<img src="images/Screenshot (393).png">
-<img src="images/Screenshot (394).png">
-<img src="images/Screenshot (395).png">
-<img src="images/Screenshot (396).png">
-<img src="images/Screenshot (397).png">
-<img src="images/Screenshot (399).png">
+
 
 
 ## Note
 * It doesn't support DOM
+* Also downlode Nocap , perl(if you using window) , nikto(clone it using git or downlode ZIP file (i recommend that))
 * All the tools are in developing phase
+  
 
