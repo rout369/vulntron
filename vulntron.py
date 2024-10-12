@@ -144,11 +144,11 @@ def main():
                 time.sleep(1)
         print(Fore.CYAN + "\nInitialization complete!\n")
         open_new_command_line()
-    if args.nikto and args.target:
-        run_nikto(args.target)
-    else:
-        print(Fore.RED + "Error: Please specify a target URL for Nikto using --target." + Fore.RESET)
-
+    if args.nikto:
+        if args.target:
+            run_nikto(args.target)
+        else:
+            print(Fore.RED + "Error: Please specify a target URL for Nikto using --target." + Fore.RESET)
 
 
 
